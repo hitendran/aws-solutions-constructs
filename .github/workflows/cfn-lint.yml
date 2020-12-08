@@ -29,4 +29,4 @@ jobs:
       - name: cfn-lint-action
         uses: ScottBrenner/cfn-lint-action@master
         with:
-          args: "**/.expected.json"
+          args: "**/*.expected.json"
