@@ -28,3 +28,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Stelligent cfn_nag
         uses: stelligent/cfn_nag@v0.5.48
+        with: 
+          input_path: source/patterns/@aws-solutions-constructs/*/test/*.expected.json
+          extra_args: --fail-on-warnings -o json
