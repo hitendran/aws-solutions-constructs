@@ -29,5 +29,5 @@ jobs:
       - name: Stelligent cfn_nag
         uses: stelligent/cfn_nag@v0.5.48
         with: 
-          input_path: source/patterns/@aws-solutions-constructs/**/*.expected.json
+          input_path: source/patterns/@aws-solutions-constructs/*/*.expected.json
           extra_args: --fail-on-warnings
