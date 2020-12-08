@@ -30,5 +30,4 @@ jobs:
         uses: stelligent/cfn_nag@v0.5.48
         with: 
           input_path: source/patterns/@aws-solutions-constructs
-          template-pattern: ..*\.expected.json
-          extra_args: --fail-on-warnings
+          extra_args: --fail-on-warnings --template-pattern=..*\.expected.json
