@@ -29,5 +29,5 @@ jobs:
       - name: cfn-guard-action
         uses: maskerade/cfn-guard-action@master
         with:
-          cfn_subdirectory: 'source/patterns/@aws-solutions-constructs/'
+          cfn_subdirectory: 'source/patterns/@aws-solutions-constructs/*/*.expected.json'
 
